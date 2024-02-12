@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    margin: inherit;
+    padding: inherit;
+    box-sizing: inherit;
+}
+
+a,
+button,
+span,
+small,
+strong {
+    display: inline-block;
+}
+
+img,
+video,
+audio,
+figure {
+    user-select: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+a,
+button {
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    background: transparent;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+ul,
+ol {
+    list-style: none;
+    list-style-type: none;
+}
