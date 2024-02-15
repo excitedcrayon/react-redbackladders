@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Admin from './pages/Admin'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Products from './pages/Products'
@@ -19,6 +20,7 @@ function App() {
         <Route path='/suppliers' element={ <Suppliers />} />
         <Route path='/contact' element={ <Contact />} />
         <Route path='/search/:text' element={ <Search/>} />
+        <Route path='/admin' element={ <Admin/>} />
       </Routes>      
     </>
   )

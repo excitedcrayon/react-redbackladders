@@ -32,10 +32,10 @@ export default function Header(){
             <section className={menuClicked ? "header_bottom nav_active" : "header_bottom"}>
                 <nav>
                     <ul>
-                        <li><NavLink to="/products">Products</NavLink></li>
-                        <li><NavLink to="/redback-advantage">Redback Advantage</NavLink></li>
-                        <li><NavLink to="/suppliers">Suppliers</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
+                        <li><NavLink to="/products" className={({ isActive }) => (isActive ? 'active_nav_link' : '')}>Products</NavLink></li>
+                        <li><NavLink to="/redback-advantage" className={({ isActive }) => (isActive ? 'active_nav_link' : '')}>Redback Advantage</NavLink></li>
+                        <li><NavLink to="/suppliers" className={({ isActive }) => (isActive ? 'active_nav_link' : '')}>Suppliers</NavLink></li>
+                        <li><NavLink to="/contact" className={({ isActive }) => (isActive ? 'active_nav_link' : '')}>Contact</NavLink></li>
                     </ul>
                 </nav>
             </section>
